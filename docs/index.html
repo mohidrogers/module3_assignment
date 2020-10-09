@@ -10,7 +10,6 @@
        
       </head>
       <body>
-          
        <h1 align="center">SPARK TECHIES</h1>
        <h2 align="center">convert the decimal number into hexadecimal,binary and octal numbers respectively</h2>
        <div align="center">
@@ -64,10 +63,10 @@
                 var z=parseInt(y,16);
                 document.getElementById("output1").value=z;
 
-                var l=document.getElementById("output1").value;
-                document.getElementById("o3").value=Number(l).toString(2);
-                var k=document.getElementById("output1").value;
-                document.getElementById("o4").value=Number(k).toString(8);
+var l=document.getElementById("output1").value;
+document.getElementById("o3").value=Number(l).toString(2);
+var k=document.getElementById("output1").value;
+document.getElementById("o4").value=Number(k).toString(8);
         }
         function fun1(){
                 var g=document.getElementById("num2").value;
@@ -80,12 +79,15 @@ var b=document.getElementById("output2").value;
 document.getElementById("o6").value=Number(b).toString(8);
         }
         function fun3(){
-                var c=document.getElementById("num3").value;
-                var d=parseInt(c,8);
-                if(d==1)
+                var dec=document.getElementById("num3").value;
+                var cec=parseInt(dec,8);
+                if(cec==1){
                 document.getElementById("output3").value=NaN;
+		}
                 else
-                document.getElementById("output3").value=d;
+		{
+                document.getElementById("output3").value=cec;
+		}
 
 var i=document.getElementById("output3").value;
 document.getElementById("o7").value=Number(i).toString(16);
