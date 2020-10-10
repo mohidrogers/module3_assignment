@@ -10,43 +10,72 @@
        
       </head>
       <body>
-          
        <h1 align="center">SPARK TECHIES</h1>
        <h2 align="center">convert the decimal number into hexadecimal,binary and octal numbers respectively</h2>
        <div align="center">
-        <input id="num" placeholder="decimal number">
+           <table>
+          <tr><td> <label for="decimal">Decimal:</label></td>
+        <td><input id="num" placeholder="decimal number"></td></tr>
         
-        <input id="output" placeholder="hexadecimal number">
-        <input id="o1" placeholder="binary number">
-        <input id="o2" placeholder="octal number">
-        <button type="submit" onclick="calculate()" onclick="fun()">convert</button>
+        <tr><td>  <label for="hexadecimal">Hexadecimal:</label></td>
+        <td><input id="output" placeholder="hexadecimal number"></td></tr>
+        <tr><td><label for="binary">Binary:</label></td>
+        <td><input id="o1" placeholder="binary number"></td></tr>
+        <tr><td><label for="hoctal">Octal:</label></td>
+        <td><input id="o2" placeholder="octal number"></td></tr>
+        <tr><td><button type="submit" onclick="calculate()" onclick="fun()">convert</button></td></tr></table>
         </div>
         <h2 align="center">convert the hexadecimal number into decimal,binary and octal numbers respectively</h2>
        <div align="center">
-        <input id="num1" placeholder="hexadecimal number">
-        
-        <input id="output1" placeholder="decimal number">
-        <input id="o3" placeholder="binary number">
-        <input id="o4" placeholder="octal number">
-        <button type="submit" onclick="fun()">convert</button>
-        </div>
+           <table>
+               <tr>
+                   <td>
+                       <label for="hexadecimal">Hexadecimal:</label> </td>
+                       <td><input id="num1" placeholder="hexadecimal number"></td>
+               </tr>
+               <tr><td><label for="decimal">Decimal:</label></td>
+            <td><input id="output1" placeholder="decimal number"></td></tr>
+            <tr><td><label for="binary">Binary:</label></td>
+            <td>
+                <input id="o3" placeholder="binary number">
+            </td></tr>
+            <tr><td><label for="octal">Octal</label></td>
+            <td><input id="o4" placeholder="octal number"></td></tr>
+            <tr><td> <button type="submit" onclick="fun()">convert</button></td></tr>
+           </table></div>
+       
         <h2 align="center">convert the binary number into decimal,hexadecimal and octal numbers respectively</h2>
         <div align="center">
-         <input id="num2" placeholder="binary number">
-         
-         <input id="output2" placeholder="decimal number">
-         <input id="o5" placeholder="hexadecimal number">
-         <input id="o6" placeholder="octal number">
-         <button type="submit" onclick="fun1()">convert</button>
+            <table>
+                <tr>
+                    <td>  <label for="binary">Binary:</label> </td>
+                    <td><input id="num2" placeholder="binary number"></td></tr>
+                    <tr><td><label for="decimal">Decimal:</label></td>
+                        <td><input id="output2" placeholder="decimal number"></td></tr>
+                        <tr><td><label for="hexadecimal">Hexadecimal:</label></td>
+                            <td> <input id="o5" placeholder="hexadecimal number"></td></tr>
+                            <tr><td><label for="octal">Octal</label></td>
+                                <td> <input id="o6" placeholder="octal number"></td></tr>
+                                <tr><td><button type="submit" onclick="fun1()">convert</button></td></tr></table>
+        
          </div>
          <h2 align="center">convert the octa number into decimal,hexadecimal and binary numbers respectively</h2>
         <div align="center">
-         <input id="num3" placeholder="octal number">
+            <table>
+                <tr>
+                    <td>
+                        <label for="octal">Octal</label>  
+                    </td>
+                    <td> <input id="num3" placeholder="octal number"></td></tr>
+                    <tr><td><label for="decimal">Decimal:</label></td>
          
-         <input id="output3" placeholder="decimal number">
-         <input id="o7" placeholder="hexadecimal number">
-         <input id="o8" placeholder="binary number">
-         <button type="submit" onclick="fun3()">convert</button>
+         <td><input id="output3" placeholder="decimal number"></td></tr>
+         <tr><td><label for="hexadecimal">Hexadecimal:</label></td>
+         <td><input id="o7" placeholder="hexadecimal number"></td></tr>
+         <tr>
+            <td>  <label for="binary">Binary:</label> </td>
+        <td> <input id="o8" placeholder="binary number"></td></tr>
+        <tr><td><button type="submit" onclick="fun3()">convert</button></td></tr></table>
          </div>
        
         <script>
@@ -64,10 +93,10 @@
                 var z=parseInt(y,16);
                 document.getElementById("output1").value=z;
 
-                var l=document.getElementById("output1").value;
-                document.getElementById("o3").value=Number(l).toString(2);
-                var k=document.getElementById("output1").value;
-                document.getElementById("o4").value=Number(k).toString(8);
+var l=document.getElementById("output1").value;
+document.getElementById("o3").value=Number(l).toString(2);
+var k=document.getElementById("output1").value;
+document.getElementById("o4").value=Number(k).toString(8);
         }
         function fun1(){
                 var g=document.getElementById("num2").value;
