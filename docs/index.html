@@ -5,14 +5,14 @@
         <meta   charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>
-            Spark Techies
+            Number System Conversion
         </title>
         
        <link rel="stylesheet" href="trail.css">
       </head>
       <body>
        <h1 align="center">SPARK TECHIES</h1>
-       <h2 align="center">convert the decimal number into hexadecimal,binary and octal numbers respectively</h2>
+       <h2 align="center">Convert the Decimal number into Hexadecimal,Binary and Octal numbers</h2>
        <div align="center">
            <table>
           <tr><td> <label style="font-weight: bold; color: white; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 15px;;" for="decimal">Decimal:</label></td>
@@ -26,7 +26,7 @@
         <td><input id="o2" placeholder="octal number"></td></tr>
         <tr><td><button id="b1" type="submit" onclick="calculate()">convert</button></td></tr></table>
         </div>
-        <h2 align="center">convert the hexadecimal number into decimal,binary and octal numbers respectively</h2>
+        <h2 align="center">Convert the Hexadecimal number into Decimal,Binary and Octal numbers</h2>
        <div align="center">
            <table>
                <tr>
@@ -45,7 +45,7 @@
             <tr><td> <button id="b2" type="submit" onclick="fun()">convert</button></td></tr>
            </table></div>
        
-        <h2 align="center">convert the binary number into decimal,hexadecimal and octal numbers respectively</h2>
+        <h2 align="center">Convert the Binary number into Decimal,Hexadecimal and Octal numbers</h2>
         <div align="center">
             <table>
                 <tr>
@@ -60,7 +60,7 @@
                                 <tr><td><button id="b3" type="submit" onclick="fun1()">convert</button></td></tr></table>
         
          </div>
-         <h2 align="center">convert the octa number into decimal,hexadecimal and binary numbers respectively</h2>
+         <h2 align="center">Convert the Octal number into Decimal,Hexadecimal and Binary numbers</h2>
         <div align="center">
             <table>
                 <tr>
@@ -97,7 +97,7 @@
             }
             function fun(){
                 var y=document.getElementById("num1").value;
-                var ax=y.match(/[g-zG-Z$&+,:;=?@#|'<>-^*()%!]/g);
+                var ax=y.match(/[g-zG-Z]/g);
                
             if(ax){
             alert("please enter a valid hexadecimal number");
