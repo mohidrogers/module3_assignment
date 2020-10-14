@@ -147,28 +147,7 @@ document.getElementById("o7").value=Number(i).toString(16);
 var j=document.getElementById("output3").value;
 document.getElementById("o8").value=Number(j).toString(2);
         }
-           var message = "function disabled by spark techies";
-
-function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
-
-if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
-
-document.onmousedown = rtclickcheck;
-
-document.onkeydown = function(e) {
-        if (e.ctrlKey && 
-            (e.keyCode === 67 || 
-             e.keyCode === 86 || 
-             e.keyCode === 85 || 
-             e.keyCode === 117 
-            
-             )) {
-            alert('function disabled by spark techies');
-            return false;
-        } else {
-            return true;
-        }
-};
+          
         </script>
       </body>
       </html>
