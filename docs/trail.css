@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@800&display=swap');
 body{
    
     /*background-color: #4d73ff;
@@ -20,8 +21,7 @@ background-attachment: fixed;
 h1{
     font-size: 50px;
     color: white;
-    font-family: 'Bungee Inline', cursive;
-    src: local(Ocean Rush DEMO.otf);
+    font-family: 'Spartan', sans-serif;
     display: block;
     
     margin-block-start: 0em;
