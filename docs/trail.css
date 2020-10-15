@@ -3,8 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@800&display=swap');
 
-@media all and (min-width:500px){
-.body{
+body{
    
     /*background-color: #4d73ff;
 background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'
@@ -27,7 +26,7 @@ background-attachment: fixed;
     -moz-transform: translate3d(0,0,0);
   
 
-	}}
+	}
 h1{
     font-size: 40px;
     color: white;
