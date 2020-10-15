@@ -19,6 +19,10 @@ background-attachment: fixed;
   transform-style: preserve-3d;
 	overflow-x:hidden;
 	overflow-y:scroll;
+	 transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
   
 
 }
