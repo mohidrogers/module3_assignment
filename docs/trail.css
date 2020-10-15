@@ -16,7 +16,9 @@ background-size: 400% 400%;
 position: relative;
 animation: change 10s ease-in-out infinite;
 background-attachment: fixed;
-  
+  transform-style: preserve-3d;
+	overflow-x:hidden;
+	overflow-y:scroll;
  
 
 }
