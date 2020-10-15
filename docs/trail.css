@@ -19,7 +19,7 @@ background-attachment: fixed;
   transform-style: preserve-3d;
 	overflow-x:hidden;
 	overflow-y:scroll;
-   -webkit-overflow-scrolling: touch;
+  
 
 }
 h1{
