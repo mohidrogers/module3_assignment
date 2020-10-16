@@ -21,10 +21,9 @@ background-attachment: fixed;
   transform-style: preserve-3d;
 	overflow-x:hidden;
 	overflow-y:scroll;
-	 border: 5px solid white;
-    border-radius: 10px;
+
     
-padding-bottom:30px;
+padding-bottom:20px;
 	}
 h1{
     font-size: 40px;
