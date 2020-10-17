@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@200&display=swap');
 body{
    
     /*background-color: #4d73ff;
@@ -29,7 +32,7 @@ padding-bottom:20px;
 h1{
     font-size: 40px;
     color: white;
-    font-family: 'Lemonada', cursive;
+    font-family: 'Merriweather', serif;
     display: block;
     
     margin-block-start: 0em;
@@ -42,9 +45,10 @@ h1{
 h2{
     font-size: 25px;
     color: white;
-    font-family: 'Work Sans', sans-serif;}
+     font-family: 'Catamaran', sans-serif;
+}
 h3{
-    font-family: 'Ubuntu', sans-serif;
+     font-family: 'Rubik', sans-serif;
     font-size: 35px;
     display: block;
     padding-bottom: 10px;
