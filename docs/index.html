@@ -107,7 +107,7 @@
             {
              
                 
-                 var z=parseInt(y,16);
+                 var z=parseFloat1(y,16);
                 document.getElementById("output1").value=z;}
               
 var l=document.getElementById("output1").value;
@@ -123,7 +123,7 @@ document.getElementById("o4").value=Number(k).toString(8);
                 location.reload();}
                 else
                 {
-                    var h=parseInt(g,2);
+                    var h=parseFloat2(g,2);
                 document.getElementById("output2").value=h;}
 
 var a=document.getElementById("output2").value;
@@ -139,7 +139,7 @@ document.getElementById("o6").value=Number(b).toString(8);
                 location.reload();}
                 else
                 {
-                    var d=parseInt(c,8);
+                    var d=parseFloat3(c,8);
                 document.getElementById("output3").value=d;}
 
 var i=document.getElementById("output3").value;
@@ -147,7 +147,33 @@ document.getElementById("o7").value=Number(i).toString(16);
 var j=document.getElementById("output3").value;
 document.getElementById("o8").value=Number(j).toString(2);
         }
-          
+          function parseFloat1(str, radix)
+{
+        var parts = str.split(".");
+        if ( parts.length > 1 )
+        {
+                return parseInt(parts[0], radix) + parseInt(parts[1], radix) / Math.pow(radix, parts[1].length);
+        }
+        return parseInt(parts[0], radix);
+}
+		function parseFloat2(str, radix)
+{
+        var parts = str.split(".");
+        if ( parts.length > 1 )
+        {
+                return parseInt(parts[0], radix) + parseInt(parts[1], radix) / Math.pow(radix, parts[1].length);
+        }
+        return parseInt(parts[0], radix);
+}
+		function parseFloat3(str, radix)
+{
+        var parts = str.split(".");
+        if ( parts.length > 1 )
+        {
+                return parseInt(parts[0], radix) + parseInt(parts[1], radix) / Math.pow(radix, parts[1].length);
+        }
+        return parseInt(parts[0], radix);
+}
         </script>
       </body>
       </html>
