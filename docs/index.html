@@ -11,8 +11,7 @@
        <link rel="stylesheet" href="trail.css">
       </head>
       <body>
-	      <div class="row">
-		       <div class="col-lg-12 col-md-12 col-sm-12"> 
+	     
        <h1 align="center">SPARK TECHIES</h1>
        <h3 align="center">Number System Conversion</h3>
        <h2 align="center">Convert the Decimal number</h2>
@@ -81,8 +80,7 @@
         <td> <input id="o8" placeholder="binary number"></td></tr>
         <tr><td><button id="b4" type="submit" onclick="fun3()">convert</button></td></tr></table>
          </div>
-		      </div>
-	      </div>
+		  
         <script>
             function calculate(){
             var x=document.getElementById("num").value;	
@@ -176,6 +174,30 @@ document.getElementById("o8").value=Number(j).toString(2);
                 return parseInt(parts[0], radix) + parseInt(parts[1], radix) / Math.pow(radix, parts[1].length);
         }
         return parseInt(parts[0], radix);
+}
+	var but=document.getElementById("num");
+but.onkeypress=function(e){
+    if(e.keyCode==13){
+      calculate();
+    }
+}
+var but1=document.getElementById("num1");
+but1.onkeypress=function(e){
+    if(e.keyCode==13){
+      fun();
+    }
+}
+var but2=document.getElementById("num2");
+but2.onkeypress=function(e){
+    if(e.keyCode==13){
+      fun1();
+    }
+}
+var but3=document.getElementById("num3");
+but3.onkeypress=function(e){
+    if(e.keyCode==13){
+      fun3();
+    }
 }
         </script>
       </body>
