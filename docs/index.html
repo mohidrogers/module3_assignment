@@ -84,7 +84,9 @@
         <script>
             function calculate(){
             var x=document.getElementById("num").value;	
-		   
+		     document.getElementById("output").disabled=true;
+		      document.getElementById("o1").disabled=true;
+		      document.getElementById("o2").disabled=true;
             ab=Number(x).toString(16);
             if(ab=="NaN"){
 
@@ -99,6 +101,9 @@
             }
             function fun(){
                 var y=document.getElementById("num1").value;
+		     document.getElementById("output1").disabled=true;
+		      document.getElementById("o3").disabled=true;
+		      document.getElementById("o4").disabled=true;
                 var ax=y.match(/[g-zG-Z]/g);
                
             if(ax){
@@ -118,6 +123,9 @@ document.getElementById("o4").value=Number(k).toString(8);
         }
         function fun1(){
                 var g=document.getElementById("num2").value;
+		 document.getElementById("output2").disabled=true;
+		      document.getElementById("o5").disabled=true;
+		      document.getElementById("o6").disabled=true;
                 var ml=g.match(/[a-zA-Z2-9$&+,:;=?@#|'<>-^*()%!]/g);
                 if(ml){
                 alert("please enter a valid binary number");
@@ -134,6 +142,9 @@ document.getElementById("o6").value=Number(b).toString(8);
         }
         function fun3(){
                 var c=document.getElementById("num3").value;
+		 document.getElementById("output3").disabled=true;
+		      document.getElementById("o7").disabled=true;
+		      document.getElementById("o8").disabled=true;
                 var kl=c.match(/[a-zA-Z8-9$&+,:;=?@#|'<>-^*()%!]/g);
                 if(kl){
                 alert("please enter a valid octal number");
