@@ -1,165 +1,202 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta   charset="UTF-8">
+<html lang="en">
+    <head profile="https://www.w3.org/2005/10/profile">
+        <link rel="icon" type="image/png" href="https://user-images.githubusercontent.com/71762318/97035156-8a4af780-1583-11eb-8f84-10f5fd704af7.png">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>
-            Number System Conversion
+          Base Converter
         </title>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Sansita+Swashed:wght@800&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="trail.css">
       </head>
       <body>
-	     
        <h1 align="center">SPARK TECHIES</h1>
-       <h3 align="center">Number System Conversion</h3>
-       <h2 align="center">Convert the Decimal number</h2>
-       <div align="center">
-           <table>
-          <tr><td> <label  for="decimal">Decimal:</label></td>
-        <td><input type="text" id="num" placeholder="decimal number" type="number" pattern="[0-9]*" inputmode="numeric"></td></tr>
-        
-        <tr><td>  <label  for="hexadecimal">Hexadecimal:</label></td>
-        <td><input disabled id="output" placeholder="hexadecimal number"></td></tr>
-        <tr><td><label for="binary">Binary:</label></td>
-        <td><input disabled id="o1" placeholder="binary number"></td></tr>
-        <tr><td><label for="hoctal">Octal:</label></td>
-        <td><input disabled id="o2" placeholder="octal number"></td></tr>
-        <tr><td><button id="b1" type="submit" onclick="calculate()">convert</button></td></tr></table>
-        </div>
-        <h2 align="center">Convert the Hexadecimal number</h2>
-       <div align="center">
-           <table>
-               <tr>
-                   <td>
-                       <label for="hexadecimal">Hexadecimal:</label> </td>
-                       <td><input id="num1" placeholder="hexadecimal number"></td>
-               </tr>
-               <tr><td><label for="decimal">Decimal:</label></td>
-            <td><input disabled id="output1" placeholder="decimal number"></td></tr>
-            <tr><td><label for="binary">Binary:</label></td>
-            <td>
-                <input disabled id="o3" placeholder="binary number">
-            </td></tr>
-            <tr><td><label for="octal">Octal:</label></td>
-            <td><input disabled id="o4" placeholder="octal number"></td></tr>
-            <tr><td> <button id="b2" type="submit" onclick="fun()">convert</button></td></tr>
-           </table></div>
        
-        <h2 align="center">Convert the Binary number</h2>
-        <div align="center">
-            <table>
-                <tr>
-                    <td>  <label for="binary">Binary:</label> </td>
-                    <td><input id="num2" placeholder="binary number" type="number" pattern="[0-9]*" inputmode="numeric"></td></tr>
-                    <tr><td><label for="decimal">Decimal:</label></td>
-                        <td><input disabled id="output2" placeholder="decimal number"></td></tr>
-                        <tr><td><label for="hexadecimal">Hexadecimal:</label></td>
-                            <td> <input disabled id="o5" placeholder="hexadecimal number"></td></tr>
-                            <tr><td><label for="octal">Octal:</label></td>
-                                <td> <input disabled id="o6" placeholder="octal number"></td></tr>
-                                <tr><td><button id="b3" type="submit" onclick="fun1()">convert</button></td></tr></table>
-        
-         </div>
-         <h2 align="center">Convert the Octal number</h2>
-        <div align="center">
-            <table>
-                <tr>
-                    <td>
-                        <label for="octal">Octal:</label>  
-                    </td>
-                    <td> <input id="num3" placeholder="octal number" type="number" pattern="[0-9]*" inputmode="numeric"></td></tr>
-                    <tr><td><label for="decimal">Decimal:</label></td>
-         
-         <td><input disabled id="output3" placeholder="decimal number"></td></tr>
-         <tr><td><label for="hexadecimal">Hexadecimal:</label></td>
-         <td><input disabled id="o7" placeholder="hexadecimal number"></td></tr>
-         <tr>
-            <td>  <label for="binary">Binary:</label> </td>
-        <td> <input disabled id="o8" placeholder="binary number"></td></tr>
-        <tr><td><button id="b4" type="submit" onclick="fun3()">convert</button></td></tr></table>
-         </div>
-		  
+       <h3 align="center">Number System Conversion</h3>
+       <h2 align="center">Enter Your Number Below</h2>
+           
+       <table align="center">
+          <tr><td> <label  for="decimal">Decimal:</label></td>
+        <td><input type="text" id="num" placeholder="input 1" oninput="calculate()"/></td>
+        <td><input type="text" id="num1" placeholder="input 2" oninput="calculate1()"/></td>
+        <td><input type="text" id="num2" placeholder="output"/></td>
+        </tr>
+        <tr><td>  <label  for="hexadecimal">Hexadecimal:</label></td>
+        <td><input id="output" placeholder="input 1" oninput="fun()"></td>
+        <td><input type="text" id="output1" placeholder="input 2" oninput="fun11()"/></td>
+        <td><input type="text" id="output2" placeholder="output"/></td></tr>
+        <tr><td><label for="binary">Binary:</label></td>
+        <td><input id="o1" placeholder="input 1" oninput="fun1()"></td>
+        <td><input type="text" id="o12" placeholder="input 2" oninput="fun12()"/></td>
+        <td><input type="text" id="o13" placeholder="output"/></td></tr>
+        <tr><td><label for="hoctal">Octal:</label></td>
+        <td><input id="o2" placeholder="input 1" oninput="fun3()"></td>
+        <td><input type="text" id="o21" placeholder="input 2" oninput="fun31()"/></td>
+        <td><input type="text" id="o22" placeholder="output"/></td></tr><tr><td><button id="b0" value="submit" style="cursor:pointer; font-weight: bold;" onclick="reset()">Reset</button></td></tr>
+               <tr> <td><button id="b1" value="submit" style="cursor:pointer; font-weight: bold;" onclick="sum()">Addition</button></td>
+                        <td><button id="b2" value="submit" style="cursor:pointer; font-weight: bold;" onclick="sub()">Subtraction</button></td>
+                        <td><button id="b3" value="submit" style="cursor:pointer; font-weight: bold;" onclick="mul()">Multiplication</button></td>
+                        <td><button id="b4" value="submit" style="cursor:pointer; font-weight: bold;" onclick="quo()">Quotient</button></td>
+                        <td><button id="b5" value="submit" style="cursor:pointer; font-weight: bold;" onclick="rem()">Reminder</button></td>
+                </tr>
+                </table>
+
+ <div align="center" class="yt1">
+        <p style="font-size: 20px; margin-block-start: 0.5em;margin-block-end: 0.5em; font-family: Arial, Helvetica, sans-serif;">Follow Us On Social Media</p><table><tr><td><a href="http://youtube.com/c/SparkTechies/" target="_blank" style="text-decoration: none;"><img id="yt" src="https://freeiconshop.com/wp-content/uploads/edd/youtube-solid.png" alt="youtube"></a></td>
+            <td><a href="https://www.instagram.com/spark.techies/" target="_blank" style="text-decoration: none;"><img id="ins" src="https://freeiconshop.com/wp-content/uploads/edd/instagram-new-outline.png" alt="instagram"></a></td></tr></table>
+  </div>
+  
+       
         <script>
             function calculate(){
             var x=document.getElementById("num").value;	
-		     document.getElementById("output").disabled=true;
-		      document.getElementById("o1").disabled=true;
-		      document.getElementById("o2").disabled=true;
-            ab=Number(x).toString(16);
-            if(ab=="NaN"){
+            var can=x.match(/[a-zA-Z$&,:;?@#|'<>-^*()%!]/g);
+                if(can){
+                alert("please enter a valid binary number");
+                }
 
-            alert("please enter a valid decimal number");
-            location.reload();}
-
-            else{
+           
+           
+            else{   
+                ab=Number(x).toString(16);
             document.getElementById("output").value =ab;
             document.getElementById("o1").value =Number(x).toString(2);
             document.getElementById("o2").value =Number(x).toString(8);}
-            
             }
             function fun(){
-                var y=document.getElementById("num1").value;
-		     document.getElementById("output1").disabled=true;
-		      document.getElementById("o3").disabled=true;
-		      document.getElementById("o4").disabled=true;
-                var ax=y.match(/[g-zG-Z]/g);
-               
+                var y=document.getElementById("output").value;
+                var ax=y.match(/[g-zG-Z]/g);   
             if(ax){
             alert("please enter a valid hexadecimal number");
-            location.reload();}
+           }
             else
             {
-             
-                
                  var z=parseFloat1(y,16);
-                document.getElementById("output1").value=z;}
-              
-var l=document.getElementById("output1").value;
-document.getElementById("o3").value=Number(l).toString(2);
-var k=document.getElementById("output1").value;
-document.getElementById("o4").value=Number(k).toString(8);
+                document.getElementById("num").value=z;}
+             var l=document.getElementById("num").value;
+             document.getElementById("o1").value=Number(l).toString(2);
+             var k=document.getElementById("num").value;
+             document.getElementById("o2").value=Number(k).toString(8);
         }
         function fun1(){
-                var g=document.getElementById("num2").value;
-		 document.getElementById("output2").disabled=true;
-		      document.getElementById("o5").disabled=true;
-		      document.getElementById("o6").disabled=true;
-                var ml=g.match(/[a-zA-Z2-9$&+,:;=?@#|'<>-^*()%!]/g);
+                var g=document.getElementById("o1").value;
+                var ml=g.match(/[a-zA-Z2-9$&,:;=?@#|'<>-^*()%!]/g);
                 if(ml){
                 alert("please enter a valid binary number");
-                location.reload();}
+                }
                 else
                 {
                     var h=parseFloat2(g,2);
-                document.getElementById("output2").value=h;}
-
-var a=document.getElementById("output2").value;
-document.getElementById("o5").value=Number(a).toString(16);
-var b=document.getElementById("output2").value;
-document.getElementById("o6").value=Number(b).toString(8);
+                document.getElementById("num").value=h;}
+                var a=document.getElementById("num").value;
+                document.getElementById("output").value=Number(a).toString(16);
+                var b=document.getElementById("num").value;
+                document.getElementById("o2").value=Number(b).toString(8);
         }
         function fun3(){
-                var c=document.getElementById("num3").value;
-		 document.getElementById("output3").disabled=true;
-		      document.getElementById("o7").disabled=true;
-		      document.getElementById("o8").disabled=true;
-                var kl=c.match(/[a-zA-Z8-9$&+,:;=?@#|'<>-^*()%!]/g);
+                var c=document.getElementById("o2").value;
+                var kl=c.match(/[a-zA-Z8-9$&,:;=?@#|'<>-^*()%!]/g);
                 if(kl){
                 alert("please enter a valid octal number");
-                location.reload();}
+              }
                 else
                 {
                     var d=parseFloat3(c,8);
-                document.getElementById("output3").value=d;}
+                document.getElementById("num").value=d;}
+                var i=document.getElementById("num").value;
+                document.getElementById("output").value=Number(i).toString(16);
+                var j=document.getElementById("num").value;
+                document.getElementById("o1").value=Number(j).toString(2);
+        }
+function parseFloat1(str, radix)
+{
+        var parts = str.split(".");
+        if ( parts.length > 1 )
+        {
+                return parseInt(parts[0], radix) + parseInt(parts[1], radix) / Math.pow(radix, parts[1].length);
+        }
+        return parseInt(parts[0], radix);
+}
+function parseFloat2(str, radix)
+{
+        var parts = str.split(".");
+        if ( parts.length > 1 )
+        {
+                return parseInt(parts[0], radix) + parseInt(parts[1], radix) / Math.pow(radix, parts[1].length);
+        }
+        return parseInt(parts[0], radix);
+}
+function parseFloat3(str, radix)
+{
+        var parts = str.split(".");
+        if ( parts.length > 1 )
+        {
+                return parseInt(parts[0], radix) + parseInt(parts[1], radix) / Math.pow(radix, parts[1].length);
+        }
+        return parseInt(parts[0], radix);
+}
+function calculate1(){
+            var x=document.getElementById("num1").value;	
+            var can=x.match(/[a-zA-Z$&,:;?@#|'<>-^*()%!]/g);
+                if(can){
+                alert("please enter a valid binary number");
+                }
 
-var i=document.getElementById("output3").value;
-document.getElementById("o7").value=Number(i).toString(16);
-var j=document.getElementById("output3").value;
-document.getElementById("o8").value=Number(j).toString(2);
+           
+           
+            else{   
+                ab=Number(x).toString(16);
+            document.getElementById("output1").value =ab;
+            document.getElementById("o12").value =Number(x).toString(2);
+            document.getElementById("o21").value =Number(x).toString(8);}
+            }
+            function fun11(){
+                var y=document.getElementById("output1").value;
+                var ax=y.match(/[g-zG-Z]/g);   
+            if(ax){
+            alert("please enter a valid hexadecimal number");
+           }
+            else
+            {
+                 var z=parseFloat1(y,16);
+                document.getElementById("num1").value=z;}
+             var l=document.getElementById("num1").value;
+             document.getElementById("o12").value=Number(l).toString(2);
+             var k=document.getElementById("num").value;
+             document.getElementById("o21").value=Number(k).toString(8);
         }
-          function parseFloat1(str, radix)
+        function fun12(){
+                var g=document.getElementById("o12").value;
+                var ml=g.match(/[a-zA-Z2-9$&,:;=?@#|'<>-^*()%!]/g);
+                if(ml){
+                alert("please enter a valid binary number");
+                }
+                else
+                {
+                    var h=parseFloat2(g,2);
+                document.getElementById("num1").value=h;}
+                var a=document.getElementById("num1").value;
+                document.getElementById("output1").value=Number(a).toString(16);
+                var b=document.getElementById("num1").value;
+                document.getElementById("o21").value=Number(b).toString(8);
+        }
+        function fun31(){
+                var c=document.getElementById("o21").value;
+                var kl=c.match(/[a-zA-Z8-9$&,:;=?@#|'<>-^*()%!]/g);
+                if(kl){
+                alert("please enter a valid octal number");
+              }
+                else
+                {
+                    var d=parseFloat3(c,8);
+                document.getElementById("num1").value=d;}
+                var i=document.getElementById("num1").value;
+                document.getElementById("output1").value=Number(i).toString(16);
+                var j=document.getElementById("num1").value;
+                document.getElementById("o12").value=Number(j).toString(2);
+        }
+function parseFloat1(str, radix)
 {
         var parts = str.split(".");
         if ( parts.length > 1 )
@@ -168,7 +205,7 @@ document.getElementById("o8").value=Number(j).toString(2);
         }
         return parseInt(parts[0], radix);
 }
-		function parseFloat2(str, radix)
+function parseFloat2(str, radix)
 {
         var parts = str.split(".");
         if ( parts.length > 1 )
@@ -177,7 +214,7 @@ document.getElementById("o8").value=Number(j).toString(2);
         }
         return parseInt(parts[0], radix);
 }
-		function parseFloat3(str, radix)
+function parseFloat3(str, radix)
 {
         var parts = str.split(".");
         if ( parts.length > 1 )
@@ -186,30 +223,51 @@ document.getElementById("o8").value=Number(j).toString(2);
         }
         return parseInt(parts[0], radix);
 }
-	var but=document.getElementById("num");
-but.onkeypress=function(e){
-    if(e.keyCode==13){
-      calculate();
-    }
+function reset(){
+    var res=document.getElementById("b1").value;
+    res=location.reload();
 }
-var but1=document.getElementById("num1");
-but1.onkeypress=function(e){
-    if(e.keyCode==13){
-      fun();
-    }
+function sum(){
+        var num=document.getElementById("num").value;
+        var num1=document.getElementById("num1").value;
+document.getElementById("num2").value=Number(Number(num)+Number(num1));
+document.getElementById("output2").value=Number(Number(num)+Number(num1)).toString(16);
+   document.getElementById("o13").value=Number(Number(num)+Number(num1)).toString(2);
+   document.getElementById("o22").value=Number(Number(num)+Number(num1)).toString(8);
 }
-var but2=document.getElementById("num2");
-but2.onkeypress=function(e){
-    if(e.keyCode==13){
-      fun1();
-    }
+function sub(){
+        var num=document.getElementById("num").value;
+        var num1=document.getElementById("num1").value;
+document.getElementById("num2").value=Number(Number(num)-Number(num1));
+document.getElementById("output2").value=Number(Number(num)-Number(num1)).toString(16);
+   document.getElementById("o13").value=Number(Number(num)-Number(num1)).toString(2);
+   document.getElementById("o22").value=Number(Number(num)-Number(num1)).toString(8);
 }
-var but3=document.getElementById("num3");
-but3.onkeypress=function(e){
-    if(e.keyCode==13){
-      fun3();
-    }
+function mul(){
+        var num=document.getElementById("num").value;
+        var num1=document.getElementById("num1").value;
+document.getElementById("num2").value=Number(Number(num)*Number(num1));
+document.getElementById("output2").value=Number(Number(num)*Number(num1)).toString(16);
+   document.getElementById("o13").value=Number(Number(num)*Number(num1)).toString(2);
+   document.getElementById("o22").value=Number(Number(num)*Number(num1)).toString(8);
 }
+function quo(){
+        var num=document.getElementById("num").value;
+        var num1=document.getElementById("num1").value;
+document.getElementById("num2").value=Math.floor(Number(Number(num)/Number(num1)));
+document.getElementById("output2").value=Math.floor(Number(Number(num)/Number(num1))).toString(16);
+   document.getElementById("o13").value=Math.floor(Number(Number(num)/Number(num1))).toString(2);
+   document.getElementById("o22").value=Math.floor(Number(Number(num)/Number(num1))).toString(8);
+}
+function rem(){
+        var num=document.getElementById("num").value;
+        var num1=document.getElementById("num1").value;
+document.getElementById("num2").value=Number(Number(num)%Number(num1));
+document.getElementById("output2").value=Number(Number(num)%Number(num1)).toString(16);
+   document.getElementById("o13").value=Number(Number(num)%Number(num1)).toString(2);
+   document.getElementById("o22").value=Number(Number(num)%Number(num1)).toString(8);
+}
+
         </script>
       </body>
       </html>
