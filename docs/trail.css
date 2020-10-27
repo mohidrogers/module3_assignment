@@ -54,7 +54,7 @@ h3{
 input{
     border: 5px solid white;
     border-radius: 5px;
-    width: 75%;
+    width: 80%;
 }
 @keyframes change{
     0%{
