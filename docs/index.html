@@ -18,8 +18,8 @@
            
        <table align="center">
           <tr><td> <label  for="decimal">Decimal:</label></td>
-        <td><input type="text" id="num" placeholder="input 1" oninput="calculate()"/></td>
-        <td><input type="text" id="num1" placeholder="input 2" oninput="calculate1()"/></td>
+        <td><input type="text" id="num" placeholder="input 1" inputmode="numeric" oninput="calculate()"/></td>
+        <td><input type="text" id="num1" placeholder="input 2" inputmode="numeric" oninput="calculate1()"/></td>
         <td><input type="text" id="num2" placeholder="output"/></td>
         </tr>
         <tr><td>  <label  for="hexadecimal">Hexadecimal:</label></td>
@@ -27,12 +27,12 @@
         <td><input type="text" id="output1" placeholder="input 2" oninput="fun11()"/></td>
         <td><input type="text" id="output2" placeholder="output"/></td></tr>
         <tr><td><label for="binary">Binary:</label></td>
-        <td><input id="o1" placeholder="input 1" oninput="fun1()"></td>
-        <td><input type="text" id="o12" placeholder="input 2" oninput="fun12()"/></td>
+        <td><input id="o1" placeholder="input 1" inputmode="numeric" oninput="fun1()"></td>
+        <td><input type="text" id="o12" placeholder="input 2" inputmode="numeric" oninput="fun12()"/></td>
         <td><input type="text" id="o13" placeholder="output"/></td></tr>
         <tr><td><label for="hoctal">Octal:</label></td>
-        <td><input id="o2" placeholder="input 1" oninput="fun3()"></td>
-        <td><input type="text" id="o21" placeholder="input 2" oninput="fun31()"/></td>
+        <td><input id="o2" placeholder="input 1" inputmode="numeric" oninput="fun3()"></td>
+        <td><input type="text" id="o21" placeholder="input 2" inputmode="numeric" oninput="fun31()"/></td>
         <td><input type="text" id="o22" placeholder="output"/></td></tr><tr><td><button id="b0" value="submit" style="cursor:pointer; font-weight: bold;" onclick="reset()">Reset</button></td></tr>
                <tr> <td><button id="b1" value="submit" style="cursor:pointer; font-weight: bold;" onclick="sum()">Addition</button></td>
                         <td><button id="b2" value="submit" style="cursor:pointer; font-weight: bold;" onclick="sub()">Subtraction</button></td>
