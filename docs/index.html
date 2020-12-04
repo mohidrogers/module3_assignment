@@ -9,30 +9,37 @@
           Base Converter
         </title>
        <link rel="stylesheet" href="trail.css">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
       </head>
       <body>
-       <h1 align="center">SPARK TECHIES</h1>
+        <div class="container">
+                <div class="row">
+                  <div class="col-md-4"></div>
+  
+                
+                  <div class="col-md-12"><h1 align="center">SPARK TECHIES</h1>
        
-       <h3 align="center">Arithmetic Operations</h3>
-       <h2 align="center">Enter Your Inputs Below</h2>
+       <h2 align="center">Arithmetic Operations</h2>
+       
            
        <table align="center">
+               <tr></tr>
           <tr><td> <label  for="decimal">Decimal:</label></td>
-        <td><input type="text" id="num" placeholder="input 1" inputmode="numeric" oninput="calculate()"/></td>
-        <td><input type="text" id="num1" placeholder="input 2" inputmode="numeric" oninput="calculate1()"/></td>
+        <td><input type="text" id="num" placeholder="input 1" oninput="calculate()"/></td>
+        <td><input type="text" id="num1" placeholder="input 2" oninput="calculate1()"/></td>
         <td><input type="text" id="num2" placeholder="output"/></td>
         </tr>
-        <tr><td>  <label  for="hexadecimal">Hexadecimal:</label></td>
+        <tr><td> <label  for="hexadecimal">Hexadecimal:</label></td>
         <td><input id="output" placeholder="input 1" oninput="fun()"></td>
         <td><input type="text" id="output1" placeholder="input 2" oninput="fun11()"/></td>
         <td><input type="text" id="output2" placeholder="output"/></td></tr>
         <tr><td><label for="binary">Binary:</label></td>
-        <td><input id="o1" placeholder="input 1" inputmode="numeric" oninput="fun1()"></td>
-        <td><input type="text" id="o12" placeholder="input 2" inputmode="numeric" oninput="fun12()"/></td>
+        <td><input id="o1" placeholder="input 1" oninput="fun1()"></td>
+        <td><input type="text" id="o12" placeholder="input 2" oninput="fun12()"/></td>
         <td><input type="text" id="o13" placeholder="output"/></td></tr>
         <tr><td><label for="hoctal">Octal:</label></td>
-        <td><input id="o2" placeholder="input 1" inputmode="numeric" oninput="fun3()"></td>
-        <td><input type="text" id="o21" placeholder="input 2" inputmode="numeric" oninput="fun31()"/></td>
+        <td><input id="o2" placeholder="input 1" oninput="fun3()"></td>
+        <td><input type="text" id="o21" placeholder="input 2" oninput="fun31()"/></td>
         <td><input type="text" id="o22" placeholder="output"/></td></tr><tr><td><button id="b0" value="submit" style="cursor:pointer; font-weight: bold;" onclick="reset()">Reset</button></td></tr>
                <tr> <td><button id="b1" value="submit" style="cursor:pointer; font-weight: bold;" onclick="sum()">Addition(+)</button></td>
                         <td><button id="b2" value="submit" style="cursor:pointer; font-weight: bold;" onclick="sub()">Subtraction(-)</button></td>
@@ -41,16 +48,19 @@
                         <td><button id="b5" value="submit" style="cursor:pointer; font-weight: bold;" onclick="rem()">Reminder(%)</button></td>
                 </tr>
                 </table>
-          <p align="center" style="font-size: 18px;">Instructions:<br>
+                <p align="center" style="font-size: 18px; color: white;">Instructions:<br>
                 1.Enter the input values in the respective input fields mentioned above.<br>
         2.After entering the valid input,click on the operations which you want to perform.<br>
 3.Once you click on the Operations,your desired output will be dispalyed in the output field mentioned above.</p>
+
 
  <div align="center" class="yt1">
         <p style="font-size: 20px; margin-block-start: 0.5em;margin-block-end: 0.5em; font-family: Arial, Helvetica, sans-serif;">Follow Us On Social Media</p><table><tr><td><a href="http://youtube.com/c/SparkTechies/" target="_blank" style="text-decoration: none;"><img id="yt" src="https://freeiconshop.com/wp-content/uploads/edd/youtube-solid.png" alt="youtube"></a></td>
             <td><a href="https://www.instagram.com/spark.techies/" target="_blank" style="text-decoration: none;"><img id="ins" src="https://freeiconshop.com/wp-content/uploads/edd/instagram-new-outline.png" alt="instagram"></a></td></tr></table>
   </div>
-  
+       </div>
+       <div class="col-md-4"></div>
+  </div></div>
        
         <script>
             function calculate(){
