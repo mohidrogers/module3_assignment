@@ -33,12 +33,7 @@ h2{
     margin-block-end: 0.2em;
     font-weight: 300;
 }
-h3{
-    font-family: 'Rubik', sans-serif;
-    font-size: 32px;
-    margin-block-start: .4em;
-    margin-block-end: .4em;
-}
+
 #num, #output,#o1,#o2,#num1,#num2,#output1,#output2,#o13,#o12,#o21,#o22{
     background-color: white;
     font-weight: bold;
